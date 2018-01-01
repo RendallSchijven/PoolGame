@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pool Game</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- External libraries -->
+        <script type="text/javascript" src="library/three.js-master/build/three.js"></script>
+        <script type="text/javascript" src="library/three.js-master/build/three.min.js"></script>
+        <script type="text/javascript" src="library/OrbitControls.js"></script>
+
+        <!-- My js-->
+        <!--<script type="text/javascript" src="js/Game.js"></script>-->
+        <script type="text/javascript" src="js/PoolBall.js"></script>
+        <script type="text/javascript" src="js/Player.js"></script>
+        <script type="text/javascript" src="js/Game.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+
+    </head>
+    <div id="startScreen" onclick="this.remove()">
+        <h1>Eight ball pool</h1><h2>By Rendall Schijven</h2><h2>Click to start</h2><h3>All the normal <a href="https://en.wikipedia.org/wiki/Eight-ball" target="_blank">rules</a> of eight ball pool apply.
+        <br>You can shoot with space on the keyboard, the ball will move in the direction you are looking at.
+        <br>You can move the camera with the arrow keys and by dragging the mouse, you can zoom with the scroll button.</h3>
+    </div>
+    <body onload="init()">
+        <p class="center" id="mainInfo"></p>
+        <p class="center left" id="p1Info"></p>
+        <p class="center right" id="p2Info"></p>
+    </body>
+</html>
